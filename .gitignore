@@ -16,6 +16,9 @@ checkpoints/
 # The supplied article copy is licensed for personal use, not redistribution.
 /Deep-Autoencoders.pdf
 
+# Local presentation (intentionally not published in the repository)
+/presentation.html
+
 # Editors and operating systems
 .idea/
 .vscode/
