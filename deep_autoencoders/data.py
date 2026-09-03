@@ -93,7 +93,7 @@ def load_mnist(
     missing = [name for name in _FILES if not (root / name).exists()]
     if missing:
         raise FileNotFoundError(
-            f"MNIST is missing {missing}; run `python -m deepae download`"
+            f"MNIST is missing {missing}; run `python -m deep_autoencoders download`"
         )
 
     train_images = _read_images(root / "train-images-idx3-ubyte.gz")

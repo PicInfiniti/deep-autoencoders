@@ -2,8 +2,8 @@ import unittest
 
 import torch
 
-from deepae.model import DeepAutoencoder
-from deepae.rbm import RestrictedBoltzmannMachine
+from deep_autoencoders.model import DeepAutoencoder
+from deep_autoencoders.rbm import RestrictedBoltzmannMachine
 
 
 class DeepAutoencoderTests(unittest.TestCase):

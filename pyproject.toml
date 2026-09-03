@@ -1,20 +1,18 @@
 [build-system]
-requires = ["setuptools>=59"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "deep-autoencoders-paper"
+name = "deep-autoencoders"
 version = "0.1.0"
 description = "PyTorch reproduction of Hinton and Salakhutdinov's deep autoencoder"
 readme = "README.md"
 requires-python = ">=3.10"
-license = {text = "MIT"}
-authors = [{name = "deep-autoencoders contributors"}]
+license = "MIT"
 dependencies = ["torch==2.12.1", "numpy==2.2.6"]
 
 [project.scripts]
-deep-autoencoders = "deepae.cli:main"
+deep-autoencoders = "deep_autoencoders.cli:main"
 
 [tool.setuptools.packages.find]
-where = ["src"]
-include = ["deepae*"]
+include = ["deep_autoencoders*"]
