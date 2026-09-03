@@ -2,8 +2,8 @@ import unittest
 
 import torch
 
-from deep_autoencoders.model import DeepAutoencoder
-from deep_autoencoders.training import nonlinear_cg_batch, reconstruction_metrics
+from deepae.model import DeepAutoencoder
+from deepae.training import nonlinear_cg_batch, reconstruction_metrics
 
 
 class TrainingTests(unittest.TestCase):

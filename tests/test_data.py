@@ -6,7 +6,7 @@ from pathlib import Path
 
 import torch
 
-from deep_autoencoders.data import _read_images, _read_labels
+from deepae.data import _read_images, _read_labels
 
 
 class MnistParsingTests(unittest.TestCase):

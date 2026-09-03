@@ -2,7 +2,7 @@ import unittest
 
 import torch
 
-from deep_autoencoders.rbm import RestrictedBoltzmannMachine, pretrain_stack
+from deepae.rbm import RestrictedBoltzmannMachine, pretrain_stack
 
 
 class RestrictedBoltzmannMachineTests(unittest.TestCase):

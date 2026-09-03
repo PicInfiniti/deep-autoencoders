@@ -13,7 +13,7 @@ authors = [{name = "deep-autoencoders contributors"}]
 dependencies = ["torch==2.12.1", "numpy==2.2.6"]
 
 [project.scripts]
-deep-autoencoders = "deep_autoencoders.cli:main"
+deep-autoencoders = "deepae.cli:main"
 
 [tool.setuptools.packages.find]
-include = ["deep_autoencoders*"]
+include = ["deepae*"]

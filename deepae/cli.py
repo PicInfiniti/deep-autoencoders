@@ -54,7 +54,7 @@ def _parse_layers(value: str) -> list[int]:
 
 def _build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        prog="python -m deep_autoencoders",
+        prog="python -m deepae",
         description="Reproduce Hinton and Salakhutdinov's deep autoencoder.",
     )
     subparsers = parser.add_subparsers(dest="command", required=True)

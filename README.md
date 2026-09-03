@@ -82,7 +82,7 @@ CUDA version and keep the version pin synchronized.
 ## Download MNIST
 
 ```bash
-python -m deep_autoencoders download
+python -m deepae download
 ```
 
 This downloads and verifies the four MNIST files under `data/mnist/`. The data
@@ -93,20 +93,20 @@ directory is ignored by Git.
 Run a manageable local experiment first:
 
 ```bash
-python -m deep_autoencoders train --preset quick --pca
+python -m deepae train --preset quick --pca
 ```
 
 Run the full architecture and schedule reported by the paper:
 
 ```bash
-python -m deep_autoencoders train --preset paper --pca
+python -m deepae train --preset paper --pca
 ```
 
 The paper preset is computationally expensive, especially on CPU. A short
 end-to-end smoke run can be launched with:
 
 ```bash
-python -m deep_autoencoders train \
+python -m deepae train \
   --layers 784,64,32,10 \
   --pretrain-epochs 1 \
   --finetune-epochs 1 \
@@ -120,10 +120,10 @@ the output directory and checkpoints are ignored by Git.
 Evaluate a saved model:
 
 ```bash
-python -m deep_autoencoders evaluate runs/mnist/autoencoder.pt
+python -m deepae evaluate runs/mnist/autoencoder.pt
 ```
 
-Use `python -m deep_autoencoders train --help` to override architecture,
+Use `python -m deepae train --help` to override architecture,
 epochs, batch sizes, optimizer, learning rate, device, and dataset limits.
 
 ## Tests
@@ -139,7 +139,7 @@ fine-tuning.
 ## Repository layout
 
 ```text
-deep_autoencoders/
+deepae/
   data.py       MNIST download and IDX parsing
   rbm.py        Bernoulli/Gaussian RBMs and greedy CD-1 pretraining
   model.py      symmetric autoencoder and RBM weight unrolling
