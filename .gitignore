@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Downloaded datasets and generated training artifacts
+data/
+runs/
+checkpoints/
+*.pt
+*.pth
+
+# The supplied article copy is licensed for personal use, not redistribution.
+/Deep-Autoencoders.pdf
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
