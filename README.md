@@ -73,6 +73,7 @@ Python 3.10 or newer is required. With a virtual environment active:
 
 ```bash
 python -m pip install -r requirements.txt
+python -m pip install --no-deps -e .
 ```
 
 PyTorch is pinned in `requirements.txt`; the configured official wheel index
@@ -139,7 +140,7 @@ fine-tuning.
 ## Repository layout
 
 ```text
-deepae/
+src/deepae/
   data.py       MNIST download and IDX parsing
   rbm.py        Bernoulli/Gaussian RBMs and greedy CD-1 pretraining
   model.py      symmetric autoencoder and RBM weight unrolling

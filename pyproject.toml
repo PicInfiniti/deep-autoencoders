@@ -16,4 +16,5 @@ dependencies = ["torch==2.12.1", "numpy==2.2.6"]
 deep-autoencoders = "deepae.cli:main"
 
 [tool.setuptools.packages.find]
+where = ["src"]
 include = ["deepae*"]
